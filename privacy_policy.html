@@ -3,377 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Ludo Classic Game. Learn how we collect, use, and protect your information.">
-    <title>Privacy Policy - Ludo Classic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Privacy Policy - Ludo Classic Master</title>
     <style>
         :root {
-            --bg-primary: #0f172a;
-            --bg-card: #1e293b;
-            --bg-card-hover: #334155;
-            --accent-color: #6366f1;
-            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
-            --border-color: #334155;
-            --success-color: #10b981;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #10b981;
+            --border: #334155;
         }
 
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            padding: 2rem 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 24px;
         }
 
-        header {
-            text-align: center;
-            padding: 3rem 1.5rem;
-            background: var(--bg-card);
-            border-radius: 1rem;
-            border: 1px solid var(--border-color);
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--accent-gradient);
-        }
-
-        .game-badge {
-            display: inline-block;
-            padding: 0.35rem 1rem;
-            background: rgba(99, 102, 241, 0.15);
-            color: #818cf8;
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .effective-date {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .nav-quick-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-
-        .nav-quick-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 0.4rem 0.8rem;
-            border-radius: 0.5rem;
-            font-size: 0.85rem;
-            transition: all 0.2s ease;
-            border: 1px solid transparent;
-        }
-
-        .nav-quick-links a:hover {
-            color: var(--text-primary);
-            background: rgba(99, 102, 241, 0.2);
-            border-color: rgba(99, 102, 241, 0.4);
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        section {
-            background: var(--bg-card);
-            border-radius: 1rem;
-            padding: 2rem;
-            border: 1px solid var(--border-color);
-            transition: border-color 0.2s ease;
-        }
-
-        section:hover {
-            border-color: #475569;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
         }
 
         h2 {
-            font-size: 1.35rem;
-            font-weight: 600;
-            color: #c7d2fe;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            color: var(--accent);
+            font-size: 1.25rem;
+            margin-top: 24px;
         }
 
-        p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
+        p, li {
+            color: #e2e8f0;
             font-size: 1rem;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
         }
 
         ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 1rem;
+            padding-left: 20px;
         }
 
-        li {
-            position: relative;
-            padding-left: 1.5rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.6rem;
+        .disclaimer-box {
+            background-color: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
         }
 
-        li::before {
-            content: '•';
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-            position: absolute;
-            left: 0.4rem;
-            top: -0.1rem;
-        }
-
-        .highlight-box {
-            background: rgba(99, 102, 241, 0.08);
-            border-left: 4px solid var(--accent-color);
-            padding: 1.25rem;
-            border-radius: 0 0.5rem 0.5rem 0;
-            margin: 1rem 0;
-        }
-
-        .highlight-box p {
-            color: var(--text-primary);
+        .disclaimer-box p {
+            color: #fef08a;
+            margin: 0;
             font-weight: 500;
         }
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .service-card {
-            background: rgba(15, 23, 42, 0.6);
-            border: 1px solid var(--border-color);
-            border-radius: 0.75rem;
-            padding: 1rem;
-        }
-
-        .service-card h3 {
-            font-size: 1rem;
-            color: var(--text-primary);
-            margin-bottom: 0.3rem;
-        }
-
-        .service-card p {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            margin-bottom: 0;
-        }
-
-        footer {
+        .footer {
+            margin-top: 32px;
             text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 0.875rem;
         }
 
         a {
-            color: #818cf8;
+            color: var(--primary);
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
         }
-
-        @media (max-width: 640px) {
-            body {
-                padding: 1rem 0.5rem;
-            }
-            header, section {
-                padding: 1.5rem 1rem;
-            }
-            h1 {
-                font-size: 1.75rem;
-            }
-        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <span class="game-badge">Ludo Classic</span>
-            <h1>Privacy Policy</h1>
-            <p class="effective-date">Last Updated: August 13, 2026</p>
-            
-            <div class="nav-quick-links">
-                <a href="#overview">Overview</a>
-                <a href="#information-collection">Data Collected</a>
-                <a href="#third-party">Third-Party Services</a>
-                <a href="#childrens-privacy">Children's Privacy</a>
-                <a href="#data-security">Data Security</a>
-                <a href="#user-rights">Data Deletion & Rights</a>
-                <a href="#contact-us">Contact Us</a>
-            </div>
-        </header>
+<div class="container">
+    <div class="card">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> August 13, 2026</p>
+        <p><strong>Application:</strong> Ludo Classic Master</p>
+        <p><strong>Developer:</strong> Aim Tech Park / Zubair Bin Tarque</p>
 
-        <main>
-            <section id="overview">
-                <h2>1. Introduction</h2>
-                <p>Welcome to <strong>Ludo Classic</strong> ("we," "our," or "us"). We respect your privacy and are committed to protecting the personal information of our users ("user," "you," or "your").</p>
-                <p>This Privacy Policy explains how information is collected, used, and safeguarded when you download, install, play, or interact with our mobile game application <strong>Ludo Classic</strong> (the "Game"). Please read this Privacy Policy carefully. By using our Game, you agree to the collection and use of information in accordance with this policy.</p>
-            </section>
+        <p>Thank you for playing <strong>Ludo Classic Master</strong>. We are committed to respecting your privacy and safeguarding your personal information. This Privacy Policy explains what information is collected, how it is used, and your rights regarding your data when using our Android mobile application.</p>
 
-            <section id="information-collection">
-                <h2>2. Information We Collect</h2>
-                <p>We may collect information about you in a variety of ways depending on how you interact with our Game.</p>
-                
-                <h3 style="color: var(--text-primary); font-size: 1.1rem; margin: 1rem 0 0.5rem 0;">a) Information Collected Automatically</h3>
-                <p>When you play Ludo Classic, our app and third-party partners may automatically collect certain technical information from your mobile device, including:</p>
-                <ul>
-                    <li><strong>Device Identification & Identifiers:</strong> Unique Device Identifier (IDFA/GAID), IP address, and advertising ID.</li>
-                    <li><strong>Device Information:</strong> Hardware model, operating system version, system language, battery level, and network status.</li>
-                    <li><strong>Gameplay Data:</strong> Game scores, dice roll statistics, win/loss history, levels achieved, and local game preferences.</li>
-                    <li><strong>Log & Diagnostics Data:</strong> Crash reports, system activity, performance logs, and timestamp data.</li>
-                </ul>
+        <h2>1. Information We Collect</h2>
+        <p>Ludo Classic Master is primarily designed as an offline mobile board game. We collect minimal data necessary for providing advertising and game services:</p>
+        <ul>
+            <li><strong>Local Game Data:</strong> Your game progress, coins, level, achievements, and board themes are stored 100% locally on your device using an encrypted local SQLite database (Android Room Database). We do not transmit or store your game save files on external private servers without your action.</li>
+            <li><strong>Device Identifiers & Diagnostics (AdMob & Firebase):</strong> Our application uses Google AdMob for displaying non-intrusive banner, interstitial, and rewarded ads. AdMob may collect device identifiers (such as Advertising ID), IP addresses, and performance diagnostics to deliver personalized or non-personalized ads in compliance with Google Play Developer Policies.</li>
+        </ul>
 
-                <h3 style="color: var(--text-primary); font-size: 1.1rem; margin: 1rem 0 0.5rem 0;">b) Information You Provide Voluntarily</h3>
-                <p>If you contact our support team via email or form, we may collect your name, email address, and any contents of your message to assist you.</p>
-            </section>
+        <div class="disclaimer-box">
+            <p><strong>⚠️ Virtual Currency & Gaming Policy Disclaimer:</strong> Ludo Classic Master uses virtual coins and points strictly for local game progression, board theme customization, and single-player/local gameplay. No real money, cash prizes, real-world rewards, or cash withdrawals are supported or offered in this game.</p>
+        </div>
 
-            <section id="how-we-use">
-                <h2>3. How We Use Your Information</h2>
-                <p>We use the collected information for various purposes to provide and improve your gaming experience:</p>
-                <ul>
-                    <li>To operate, maintain, and update the Game functions (pass & play, local vs computer mode, online room setups).</li>
-                    <li>To save your local game progress and user settings across sessions.</li>
-                    <li>To deliver non-personalized or personalized advertisements (where permitted).</li>
-                    <li>To analyze game performance, detect bugs, and resolve technical issues.</li>
-                    <li>To prevent fraud, cheating, and ensure fair play among all players.</li>
-                    <li>To comply with applicable legal and regulatory obligations.</li>
-                </ul>
-            </section>
+        <h2>2. Use of Information</h2>
+        <p>The minimal data collected is used solely for the following purposes:</p>
+        <ul>
+            <li>To enable offline gameplay, saving of high scores, and theme customization.</li>
+            <li>To serve relevant advertisements via Google AdMob SDK.</li>
+            <li>To allow users to optionally export or backup local database progress to their personal Google Drive storage.</li>
+        </ul>
 
-            <section id="third-party">
-                <h2>4. Third-Party Services & Advertising</h2>
-                <p>Ludo Classic may incorporate third-party SDKs and service providers to support advertising, analytics, and app functionality. These third parties may collect and process information subject to their independent privacy policies:</p>
-                
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h3>Google Play Services</h3>
-                        <p>Provides authentication, achievements, and leaderboard integration.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Google AdMob</h3>
-                        <p>Serves banner, interstitial, and rewarded video advertisements.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Firebase Analytics</h3>
-                        <p>Monitors app stability, crash reports, and gameplay metrics.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Unity Ads</h3>
-                        <p>Delivers video ad experiences and monetization capabilities.</p>
-                    </div>
-                </div>
+        <h2>3. Third-Party Services</h2>
+        <p>Our app incorporates the following trusted third-party SDK services compliant with Google Play Policies:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services & AdMob Privacy Policy</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase Analytics & App Check Privacy</a></li>
+        </ul>
 
-                <div class="highlight-box">
-                    <p>Note: Third-party ad networks may use cookies, web beacons, or tracking technologies to serve tailored ads based on your general location and interests. You can reset or opt out of personalized ads at any time via your device settings.</p>
-                </div>
-            </section>
+        <h2>4. Children's Privacy (COPPA Compliance)</h2>
+        <p>Ludo Classic Master is intended for a general audience aged 13 and older. We do not knowingly collect personal identifiable information from children under the age of 13. If you believe a child has provided personal information through third-party ad networks, please contact us immediately, and we will take prompt steps to remove such information.</p>
 
-            <section id="childrens-privacy">
-                <h2>5. Children's Privacy (COPPA & Families Policy)</h2>
-                <p>Ludo Classic is designed to be a fun, family-friendly board game for players of all ages. We do not knowingly collect or solicit personal identifiable information from children under the age of 13 (or under 16 in certain EU jurisdictions).</p>
-                <p>If we discover that a child under 13 has provided personal data without parental consent, we will promptly take steps to delete such information from our records. Parents or guardians who believe their child has submitted personal data may contact us to request deletion.</p>
-            </section>
+        <h2>5. Data Security</h2>
+        <p>Your local game data is kept securely on your device's internal application storage sandbox. Any network communication handled by third-party ad networks uses standard HTTPS encryption protocols.</p>
 
-            <section id="data-security">
-                <h2>6. Data Security & Storage</h2>
-                <p>We implement appropriate technical, administrative, and physical security measures to safeguard your information against unauthorized access, alteration, disclosure, or destruction. However, please note that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
-            </section>
+        <h2>6. Your Data Rights & Choices</h2>
+        <p>You can reset your Advertising ID or opt out of personalized ads at any time via your device settings: <code>Settings > Google > Ads > Reset Advertising ID</code> or <code>Delete Advertising ID</code>. You can also clear all game data by clearing app storage under Android settings.</p>
 
-            <section id="user-rights">
-                <h2>7. Your Data Rights & Deletion Requests</h2>
-                <p>Depending on your region (such as GDPR in Europe or CCPA/CPRA in California), you have certain rights regarding your personal data:</p>
-                <ul>
-                    <li><strong>Right to Access:</strong> You can request details about the personal data we hold about you.</li>
-                    <li><strong>Right to Deletion / Eradication:</strong> You have the right to request deletion of your personal information and game history.</li>
-                    <li><strong>Opt-Out of Personalized Ads:</strong> You can opt out of interest-based advertising directly from your device settings (e.g., <em>Settings &gt; Privacy &gt; Ads &gt; Delete Advertising ID</em> on Android, or <em>Settings &gt; Privacy &gt; Tracking</em> on iOS).</li>
-                </ul>
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions, feedback, or privacy requests concerning Ludo Classic Master, please contact the lead developer:</p>
+        <ul>
+            <li><strong>Developer:</strong> Zubair Bin Tarque (Aim Tech Park)</li>
+            <li><strong>Email:</strong> <a href="mailto:aimtechpark@gmail.com">aimtechpark@gmail.com</a></li>
+            <li><strong>Phone / WhatsApp:</strong> +8801832134112</li>
+        </ul>
 
-                <div class="highlight-box" style="border-left-color: var(--success-color); background: rgba(16, 185, 129, 0.08);">
-                    <p><strong>Request Data Deletion:</strong> To request deletion of any stored data associated with your gameplay, please send an email to <a href="mailto:support@ludogame.com">support@ludogame.com</a> with the subject line <em>"Data Deletion Request - Ludo Classic"</em>.</p>
-                </div>
-            </section>
-
-            <section id="policy-changes">
-                <h2>8. Changes to This Privacy Policy</h2>
-                <p>We may update our Privacy Policy from time to time to reflect changes in our practices or relevant laws. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
-            </section>
-
-            <section id="contact-us">
-                <h2>9. Contact Us</h2>
-                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us at:</p>
-                <ul style="margin-top: 0.5rem;">
-                    <li><strong>App Title:</strong> Ludo Classic</li>
-                    <li><strong>Email Support:</strong> <a href="mailto:support@ludogame.com">support@ludogame.com</a></li>
-                    <li><strong>Developer Contact:</strong> <a href="mailto:privacy@ludogame.com">privacy@ludogame.com</a></li>
-                </ul>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Ludo Classic. All Rights Reserved.</p>
-        </footer>
+        <div class="footer">
+            &copy; 2026 Ludo Classic Master by Aim Tech Park. All Rights Reserved.
+        </div>
     </div>
+</div>
 
 </body>
-</html>
+</html>
